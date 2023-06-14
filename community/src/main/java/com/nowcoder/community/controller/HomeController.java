@@ -50,4 +50,5 @@ public class HomeController {
         return "/index";
     }
 //String 是视图的名称
+//hello
 }
