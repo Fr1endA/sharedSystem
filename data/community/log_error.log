@@ -1,0 +1,19 @@
+2023-06-14 22:00:30,874 ERROR [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userService in com.nowcoder.community.controller.HomeController required a bean of type 'com.nowcoder.community.service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.nowcoder.community.service.UserService' in your configuration.
+
+2023-06-14 22:00:36,809 ERROR [main] c.n.c.LoggerTest [LoggerTest.java:34] error
