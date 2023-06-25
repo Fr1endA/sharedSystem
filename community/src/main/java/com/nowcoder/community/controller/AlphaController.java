@@ -3,8 +3,12 @@ package com.nowcoder.community.controller;
 
 
 import com.nowcoder.community.service.AlphaService;
+import com.nowcoder.community.until.CommunityConstant;
+import com.nowcoder.community.until.CommunityUtil;
+import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,13 +24,22 @@ public class AlphaController {
 
     @Autowired
     private AlphaService alphaService;
-
+//  无请求方法，直接以ResponseBody返回字符串至页面
     @RequestMapping("/hello")
     @ResponseBody
     public String sayHello(){
         return "Hello SpringBoot";
     }
 
+//MVC基本原理测试：
+//    ①前端请求/community/alpha/data路径
+//    ②Controller通过ResponseBody调用函数响应
+//    ③调用Service层服务
+//    ④Service调用Dao层，获取数据（Mapper）
+//    Mapper本质是一个接口，将SQL与语句统一配置至mapper.xml中，统一管理操作，但容易写错。
+//    ⑤Service将数据model封装好返回至Controller
+//    ⑥Controller将Model进一步封装，至前端可识别数据（同名原则）
+//    ⑦返回时，确定前端模板文件的路径（String）或返回ModelAndView（setViewName（路径））
 
     @RequestMapping("/data")
     @ResponseBody
@@ -147,5 +160,47 @@ public class AlphaController {
         list.add(map);
 
         return list;
+    }
+
+    @RequestMapping(path="/cookie/set",method=RequestMethod.GET)
+    @ResponseBody
+    public String setCookie(HttpServletResponse response){
+//        创建Cookie
+        Cookie cookie =new Cookie("code", CommunityUtil.generateUUID());
+//          Cookie生效范围
+        cookie.setMaxAge(60*10);
+//        Cookie作用范围
+        cookie.setPath("community/alpha");
+//         发送cookie
+        response.addCookie(cookie);
+        return "set success";
+    }
+
+    @RequestMapping(path="/cookie/get",method = RequestMethod.GET)
+    @ResponseBody
+    public String getCookie(@CookieValue("code") String code){
+        System.out.println(code);
+
+
+        return "get cookie";
+    }
+
+    @RequestMapping(path="/session/set" , method = RequestMethod.GET)
+    @ResponseBody
+    public String setSession(HttpSession session){
+        session.setAttribute("id",1);
+        session.setAttribute("name","test");
+        return "session set!";
+    }
+
+
+    @RequestMapping(path="/session/get",method = RequestMethod.GET)
+    @ResponseBody
+    public  String getSession(HttpSession session){
+        System.out.println(session.getAttribute("name"));
+        System.out.println(session.getAttribute("id"));
+
+        return "get session!";
+
     }
 }
