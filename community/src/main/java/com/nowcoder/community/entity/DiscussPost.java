@@ -11,7 +11,7 @@ public class DiscussPost {
     private int status;
     private Date createTime;
     private int commentCount;
-    private double socre;
+    private double score;
 
     @Override
     public String toString() {
@@ -24,7 +24,7 @@ public class DiscussPost {
                 ", status=" + status +
                 ", createDate=" + createTime +
                 ", commentCount=" + commentCount +
-                ", socre=" + socre +
+                ", socre=" + score +
                 '}';
     }
 
@@ -92,11 +92,11 @@ public class DiscussPost {
         this.commentCount = commentCount;
     }
 
-    public double getSocre() {
-        return socre;
+    public double getScore() {
+        return score;
     }
 
-    public void setSocre(double socre) {
-        this.socre = socre;
+    public void setScore(double score) {
+        this.score = score;
     }
 }

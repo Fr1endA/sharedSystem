@@ -66,7 +66,6 @@ public class LoginController implements CommunityConstant {
         } catch (IOException e) {
             logger.error("响应验证码失败" + e.getMessage());
         }
-
     }
 
     @RequestMapping(path="/register",method = RequestMethod.POST)
@@ -128,8 +127,6 @@ public class LoginController implements CommunityConstant {
             model.addAttribute("passwordMsg",map.get("passwordMsg"));
 
             return "/site/login";}
-
-
     }
 
     @RequestMapping(path= "/logout", method = RequestMethod.GET)

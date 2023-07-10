@@ -12,10 +12,7 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -48,14 +45,9 @@ class CommunityApplicationTests implements ApplicationContextAware {
 		System.out.println(alphaService);
 	}
 
-
 	@Test
 	public void testLeeCode(){
 
-
-
-
-
-}
+	}
 
 }
