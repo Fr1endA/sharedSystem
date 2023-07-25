@@ -29,7 +29,7 @@ public interface MessageMapper {
     // 修改已读状态
     int updateStatus(List<Integer> ids, int status);
 
-
+    int updateDeleteStatus(int id,int status);
 
     //
 }

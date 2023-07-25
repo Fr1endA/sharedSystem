@@ -47,7 +47,10 @@ class CommunityApplicationTests implements ApplicationContextAware {
 
 	@Test
 	public void testLeeCode(){
-
+		StringBuilder sb=new StringBuilder();
+		char temp='A'+3;
+		sb.append('A'+3);
+		System.out.println(sb.toString());
 	}
 
 }

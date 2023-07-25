@@ -51,4 +51,8 @@ public class HomeController {
     }
 //String 是视图的名称
 //hello
+    @RequestMapping(path="/error",method = RequestMethod.GET)
+    public String getErrorPage(){
+        return "/error/500";
+    }
 }

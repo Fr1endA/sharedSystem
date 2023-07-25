@@ -1,41 +1,94 @@
-2023-06-25 13:58:14,733 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 17.0.5 with PID 20908 (D:\WorkSpace\community\community\target\classes started by 95437 in D:\WorkSpace\community\community)
-2023-06-25 13:58:14,740 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:633] No active profile set, falling back to 1 default profile: "default"
-2023-06-25 13:58:14,797 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-25 13:58:14,798 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-25 13:58:16,250 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2023-06-25 13:58:16,259 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2023-06-25 13:58:16,260 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-06-25 13:58:16,260 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
-2023-06-25 13:58:16,339 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-06-25 13:58:16,341 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1540 ms
-2023-06-25 13:58:16,838 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2023-06-25 13:58:17,052 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-06-25 13:58:17,070 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2023-06-25 13:58:17,092 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
-2023-06-25 13:58:17,102 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 2.922 seconds (process running for 3.682)
-2023-06-25 13:58:46,400 INFO [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-25 13:58:46,400 INFO [http-nio-8080-exec-3] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-06-25 13:58:46,402 INFO [http-nio-8080-exec-3] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
-2023-06-25 13:58:46,472 INFO [http-nio-8080-exec-3] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-06-25 14:01:26,670 INFO [http-nio-8080-exec-5] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-06-25 14:55:18,902 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 17.0.5 with PID 6188 (D:\WorkSpace\community\community\target\classes started by 95437 in D:\WorkSpace\community\community)
-2023-06-25 14:55:18,907 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:633] No active profile set, falling back to 1 default profile: "default"
-2023-06-25 14:55:18,950 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-25 14:55:18,951 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-25 14:55:20,080 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2023-06-25 14:55:20,088 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2023-06-25 14:55:20,090 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-06-25 14:55:20,091 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
-2023-06-25 14:55:20,170 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-06-25 14:55:20,172 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1219 ms
-2023-06-25 14:55:20,693 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2023-06-25 14:55:20,869 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-06-25 14:55:20,886 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2023-06-25 14:55:20,906 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
-2023-06-25 14:55:20,917 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 2.458 seconds (process running for 3.105)
-2023-06-25 14:55:35,039 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-25 14:55:35,040 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-06-25 14:55:35,042 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
-2023-06-25 14:55:38,206 INFO [http-nio-8080-exec-7] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-06-25 14:55:38,316 INFO [http-nio-8080-exec-7] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5dfdee69
-2023-06-25 14:55:38,319 INFO [http-nio-8080-exec-7] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-07-13 15:58:58,685 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 45 class path changes (0 additions, 44 deletions, 1 modification)
+2023-07-13 15:58:58,867 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-07-13 15:58:58,868 INFO [Thread-5] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-07-13 15:58:58,917 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-07-13 15:58:58,925 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-07-13 15:58:59,174 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 17.0.5 with PID 39496 (D:\WorkSpace\community\community\target\classes started by 95437 in D:\WorkSpace\community\community)
+2023-07-13 15:58:59,174 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:633] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 15:58:59,550 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-07-13 15:58:59,551 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-13 15:58:59,551 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-13 15:58:59,551 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-07-13 15:58:59,577 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-13 15:58:59,577 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 399 ms
+2023-07-13 15:58:59,666 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-07-13 15:58:59,812 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-07-13 15:58:59,836 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-13 15:59:02,210 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 17.0.5 with PID 39496 (D:\WorkSpace\community\community\target\classes started by 95437 in D:\WorkSpace\community\community)
+2023-07-13 15:59:02,210 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:633] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 15:59:05,694 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:51] Starting RedisTests using Java 17.0.5 with PID 34916 (started by 95437 in D:\WorkSpace\community\community)
+2023-07-13 15:59:05,698 INFO [main] c.n.c.RedisTests [SpringApplication.java:633] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 15:59:06,821 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-13 15:59:06,828 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-13 15:59:06,874 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2023-07-13 15:59:12,297 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-07-13 15:59:13,701 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:57] Started RedisTests in 8.705 seconds (process running for 10.711)
+2023-07-13 16:00:21,148 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:51] Starting RedisTests using Java 17.0.5 with PID 28632 (started by 95437 in D:\WorkSpace\community\community)
+2023-07-13 16:00:21,152 INFO [main] c.n.c.RedisTests [SpringApplication.java:633] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 16:00:22,192 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-13 16:00:22,197 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-13 16:00:22,244 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2023-07-13 16:00:27,787 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-07-13 16:00:28,940 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:57] Started RedisTests in 8.435 seconds (process running for 9.476)
+2023-07-13 16:24:14,406 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-13 16:24:14,408 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-13 16:24:14,413 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 17.0.5 with PID 39496 (D:\WorkSpace\community\community\target\classes started by 95437 in D:\WorkSpace\community\community)
+2023-07-13 16:24:14,414 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:633] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 16:24:17,405 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:51] Starting RedisTests using Java 17.0.5 with PID 24428 (started by 95437 in D:\WorkSpace\community\community)
+2023-07-13 16:24:17,409 INFO [main] c.n.c.RedisTests [SpringApplication.java:633] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 16:24:18,451 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-13 16:24:18,456 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-13 16:24:18,504 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2023-07-13 16:24:24,155 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-07-13 16:24:25,469 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:57] Started RedisTests in 8.675 seconds (process running for 9.623)
+2023-07-13 16:29:00,738 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:51] Starting RedisTests using Java 17.0.5 with PID 26096 (started by 95437 in D:\WorkSpace\community\community)
+2023-07-13 16:29:00,741 INFO [main] c.n.c.RedisTests [SpringApplication.java:633] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 16:29:01,880 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-13 16:29:01,886 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-13 16:29:01,925 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2023-07-13 16:29:09,275 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-07-13 16:29:15,761 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:57] Started RedisTests in 15.657 seconds (process running for 16.667)
+2023-07-13 16:31:37,623 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:51] Starting RedisTests using Java 17.0.5 with PID 39980 (started by 95437 in D:\WorkSpace\community\community)
+2023-07-13 16:31:37,626 INFO [main] c.n.c.RedisTests [SpringApplication.java:633] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 16:31:38,526 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-13 16:31:38,530 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-13 16:31:38,600 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2023-07-13 16:31:44,388 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-07-13 16:31:45,677 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:57] Started RedisTests in 8.71 seconds (process running for 9.765)
+2023-07-13 16:41:15,949 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:51] Starting RedisTests using Java 17.0.5 with PID 45396 (started by 95437 in D:\WorkSpace\community\community)
+2023-07-13 16:41:15,953 INFO [main] c.n.c.RedisTests [SpringApplication.java:633] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 16:41:17,038 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-13 16:41:17,052 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-13 16:41:17,110 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2023-07-13 16:41:22,739 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-07-13 16:41:23,959 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:57] Started RedisTests in 8.609 seconds (process running for 9.648)
+2023-07-13 16:42:14,001 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:51] Starting RedisTests using Java 17.0.5 with PID 29672 (started by 95437 in D:\WorkSpace\community\community)
+2023-07-13 16:42:14,004 INFO [main] c.n.c.RedisTests [SpringApplication.java:633] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 16:42:15,077 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-13 16:42:15,081 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-13 16:42:15,124 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2023-07-13 16:42:20,288 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-07-13 16:42:21,455 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:57] Started RedisTests in 8.112 seconds (process running for 9.138)
+2023-07-17 21:47:08,997 INFO [main] c.n.c.CommunityApplicationTests [StartupInfoLogger.java:51] Starting CommunityApplicationTests using Java 17.0.5 with PID 40040 (started by 95437 in D:\WorkSpace\community\community)
+2023-07-17 21:47:08,998 INFO [main] c.n.c.CommunityApplicationTests [SpringApplication.java:633] No active profile set, falling back to 1 default profile: "default"
+2023-07-17 21:47:09,778 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-17 21:47:09,778 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-17 21:47:09,815 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2023-07-17 21:47:13,710 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-07-17 21:47:14,552 INFO [main] c.n.c.CommunityApplicationTests [StartupInfoLogger.java:57] Started CommunityApplicationTests in 6.041 seconds (process running for 6.985)
+2023-07-17 21:48:01,558 INFO [main] c.n.c.CommunityApplicationTests [StartupInfoLogger.java:51] Starting CommunityApplicationTests using Java 17.0.5 with PID 21184 (started by 95437 in D:\WorkSpace\community\community)
+2023-07-17 21:48:01,568 INFO [main] c.n.c.CommunityApplicationTests [SpringApplication.java:633] No active profile set, falling back to 1 default profile: "default"
+2023-07-17 21:48:02,303 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-17 21:48:02,307 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-17 21:48:02,345 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2023-07-17 21:48:06,315 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-07-17 21:48:07,154 INFO [main] c.n.c.CommunityApplicationTests [StartupInfoLogger.java:57] Started CommunityApplicationTests in 6.04 seconds (process running for 6.898)
+2023-07-17 21:49:22,384 INFO [main] c.n.c.CommunityApplicationTests [StartupInfoLogger.java:51] Starting CommunityApplicationTests using Java 17.0.5 with PID 11120 (started by 95437 in D:\WorkSpace\community\community)
+2023-07-17 21:49:22,384 INFO [main] c.n.c.CommunityApplicationTests [SpringApplication.java:633] No active profile set, falling back to 1 default profile: "default"
+2023-07-17 21:49:23,127 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-17 21:49:23,131 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-17 21:49:23,156 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-07-17 21:49:26,975 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-07-17 21:49:27,752 INFO [main] c.n.c.CommunityApplicationTests [StartupInfoLogger.java:57] Started CommunityApplicationTests in 5.84 seconds (process running for 6.725)

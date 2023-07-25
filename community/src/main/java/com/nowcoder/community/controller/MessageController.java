@@ -31,6 +31,7 @@ public class MessageController {
     private UserService userService;
     @RequestMapping(path="/letter/list",method = RequestMethod.GET)
     public String getLetterList(Model model, Page page){
+
         User user=hostHolder.getUser();
 //     分页信息
         page.setLimit(5);
@@ -90,7 +91,7 @@ public class MessageController {
         model.addAttribute("target",getLetterTarget(conversationId));
 //        获得私信id，并对每个读到的私信id标志已读
         List<Integer> ids=getLettersIds(letterList);
-        if(ids!=null){
+        if(!ids.isEmpty()){
             messageService.readMessage(ids);
         }
 
@@ -102,7 +103,7 @@ public class MessageController {
 
         if (letters != null) {
             for (Message message : letters) {
-                if (hostHolder.getUser().getId() == message.getToId() && message.getStatus() == 0) {
+                if (message.getStatus() == 0) {
                     ids.add(message.getId());
                 }
             }
@@ -146,4 +147,17 @@ public class MessageController {
         return CommunityUtil.getJSONString(0);
 
     }
+
+    @RequestMapping(path="/letter/delete" ,method = RequestMethod.POST)
+    @ResponseBody
+    public String deleteLetter(int id){
+
+        if(id>0){
+            messageService.deleteMessage(id);
+        }else{
+            return CommunityUtil.getJSONString(1,"删除失败，请重试");
+        }
+        return CommunityUtil.getJSONString(0);
+    }
+
 }

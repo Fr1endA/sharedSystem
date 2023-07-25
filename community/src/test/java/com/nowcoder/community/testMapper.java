@@ -140,6 +140,16 @@ public class testMapper {
         count = messageMapper.selectUnreadLetterCount(131, "111_131");
         System.out.println(count);
 
+        Message message = new Message();
+        message.setCreateTime(new Date());
+        message.setConversationId("111_112");
+        message.setStatus(0);
+        message.setFromId(111);
+        message.setToId(112);
+        message.setContent("测试");
+
+        messageMapper.insertMessage(message);
+
     }
 }
 
