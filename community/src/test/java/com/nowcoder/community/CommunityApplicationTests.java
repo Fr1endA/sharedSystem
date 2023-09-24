@@ -53,4 +53,5 @@ class CommunityApplicationTests implements ApplicationContextAware {
 		System.out.println(sb.toString());
 	}
 
+
 }

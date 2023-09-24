@@ -26,6 +26,7 @@ public class testMapper {
     private CommentMapper commentMapper;
     @Autowired
     private MessageMapper messageMapper;
+
     @Test
     public void testSelectUser() {
         User user = userMapper.selectById(101);
@@ -54,6 +55,7 @@ public class testMapper {
         System.out.println(rows);
         System.out.println(user.getId());
     }
+
 
     @Test
     public void updateUser() {
@@ -113,7 +115,7 @@ public class testMapper {
         comment.setUserId(102);
         comment.setEntityType(1);
         comment.setEntityId(285);
-        comment.setCreateDate(new Date());
+        comment.setCreateTime(new Date());
         comment.setTargetId(0);
 
         commentMapper.insertComment(comment);
@@ -150,6 +152,23 @@ public class testMapper {
 
         messageMapper.insertMessage(message);
 
+    }
+    @Test
+    public void testSelectCommentByUserId(){
+
+
+        List<Comment> list=commentMapper.selectCommentByUserId(171,0,5);
+        System.out.println(123);
+        for(Comment comment:list){
+            System.out.println(comment.getContent());
+        }
+        System.out.println(456);
+    }
+
+    @Test
+    public void testSelectCommentByTarget(){
+        Comment comment=commentMapper.selectCommentByCommentId(234);
+        System.out.println(comment.getContent());
     }
 }
 

@@ -1,10 +1,8 @@
 package com.nowcoder.community.service;
 
 import com.nowcoder.community.dao.mapper.CommentMapper;
-import com.nowcoder.community.dao.mapper.DiscussPostMapper;
 import com.nowcoder.community.entity.Comment;
 import com.nowcoder.community.until.CommunityConstant;
-import com.nowcoder.community.until.CommunityUtil;
 import com.nowcoder.community.until.SensitiveFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +11,6 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.util.HtmlUtils;
 
-import java.util.Date;
 import java.util.List;
 
 @Service
@@ -52,8 +49,22 @@ public class CommentService implements CommunityConstant {
         }
 
         return rows;
-
-
-
     }
+
+    public List<Comment> findCommentByUserId(int userId, int offset, int limit){
+        return commentMapper.selectCommentByUserId(userId,offset,limit);
+    }
+
+
+    public int findCommentCountByUserId(int userId) {
+        return commentMapper.selectCommentCountByUserId(userId);
+    }
+
+    public Comment findCommentByCommentId(int id) {
+        return commentMapper.selectCommentByCommentId(id);
+    }
+
+//    public int findMyCommentCount(int userId){
+//        return commentMapper.selectMyCommentCount(userId);
+//    }
 }

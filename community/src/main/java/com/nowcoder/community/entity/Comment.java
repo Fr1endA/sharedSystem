@@ -10,7 +10,9 @@ public class Comment {
     private int targetId;
     private String content;
     private int status;
-    private Date createDate;
+    private Date createTime;
+
+
 
     @Override
     public String toString() {
@@ -22,7 +24,7 @@ public class Comment {
                 ", target_id=" + targetId +
                 ", content='" + content + '\'' +
                 ", status=" + status +
-                ", createDate=" + createDate +
+                ", createDate=" + createTime +
                 '}';
     }
 
@@ -82,11 +84,11 @@ public class Comment {
         this.status = status;
     }
 
-    public Date getCreateDate() {
-        return createDate;
+    public Date getCreateTime() {
+        return createTime;
     }
 
-    public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
     }
 }
